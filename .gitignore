@@ -1,0 +1,19 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Environment folders (if created inside project)
+env/
+venv/
+.conda/
+
+# IDE files
+.vscode/
+.idea/
