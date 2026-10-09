@@ -208,7 +208,10 @@ The simulation script `03_solar_weak_field/simulate_earth_gravity.py` directly c
   You float weightlessly at the center of the Earth because the refractive slope is zero.
 * **At Earth's Surface ($|x| = 1\,R_\oplus$):**  
   The cumulative enclosed mass reaches its limit, making the spatial slope $\nabla c_{\text{eff}}$ steepest. This maximum derivative produces the standard surface gravity:
-  $$\vec{a}_{\text{surface}} = -c_{\text{eff}} \nabla c_{\text{eff}} = -\frac{GM_\oplus}{R_\oplus^2} \hat{r} = -\mathbf{9.82\text{ m/s}^2} \hat{r}$$
+
+  $$
+  \vec{a}_{\text{surface}} = -c_{\text{eff}} \nabla c_{\text{eff}} = -\frac{GM_\oplus}{R_\oplus^2} \hat{r} = -\mathbf{9.82\text{ m/s}^2} \hat{r}
+  $$
 
 ---
 
@@ -219,9 +222,16 @@ Light from the Moon takes approximately $1.28\text{ seconds}$ to reach Earth ($d
 $$\theta_{\text{aberration}} \approx \frac{v_{\text{Moon}}}{c} \approx 3.4 \times 10^{-6}\text{ rad} \approx 0.70^{\prime\prime}$$
 
 If gravity were a simple Newtonian force retarded by the light-travel time $\Delta t = d/c$, the Earth would be pulled toward the **retarded position** where the Moon was $1.28\text{ seconds}$ ago. As Pierre-Simon Laplace demonstrated in 1805, this non-radial force component would add a continuous forward torque:
-$$\vec{F}_{\text{torque}} \sim F_G \cdot \left(\frac{v}{c}\right) \hat{\theta}$$
+
+$$
+\vec{F}_{\text{torque}} \sim F_G \cdot \left(\frac{v}{c}\right) \hat{\theta}
+$$
+
 This would rapidly pump angular momentum into the orbit, causing the Moon to spiral away from Earth on astronomical timescales of mere centuries. Yet lunar laser ranging confirms orbital stability, showing the gravitational attraction points toward the **instantaneous, linearly extrapolated position** of the source:
-$$\vec{r}_{\text{target}}(t) \approx \vec{r}_{\text{retarded}}(t - \Delta t) + \vec{v}_{\text{retarded}} \cdot \Delta t$$
+
+$$
+\vec{r}_{\text{target}}(t) \approx \vec{r}_{\text{retarded}}(t - \Delta t) + \vec{v}_{\text{retarded}} \cdot \Delta t
+$$
 
 ---
 
@@ -310,7 +320,10 @@ When a particle moves at constant velocity ($\vec{v} = \text{const}$), the forwa
 * The extended refractive well ($\Delta c_{\text{eff}} \propto -1/r$) advects alongside the core wavepacket at speed $\vec{v}$.
 * The localized standing wave $\psi(\vec{x}, t)$ rests symmetrically at the exact minimum of its own refractive well.
 * Evaluating the spatial gradient at the center of the wavepacket:
-  $$\nabla c_{\text{eff}}(\vec{x}_{\text{core}}) = 0 \implies \vec{a}_{\text{self}} = -c_{\text{eff}}\nabla c_{\text{eff}} = 0$$
+  
+  $$
+  \nabla c_{\text{eff}}(\vec{x}_{\text{core}}) = 0 \implies \vec{a}_{\text{self}} = -c_{\text{eff}}\nabla c_{\text{eff}} = 0
+  $$
 
 Because the refractive environment is identical in all directions around the moving center of mass, the particle experiences zero net self-force and continues coasting indefinitely at constant velocity (Newton’s First Law).
 
@@ -320,7 +333,10 @@ When an external force $\vec{F}_{\text{ext}}$ accelerates the particle ($\vec{a}
 1. **The Core Shifts Forward:** The localized energy bundle $\psi(\vec{x}, t)$, confined within its reduced Compton wavelength $\lambda_C = \frac{\hbar}{mc}$, is displaced forward along the acceleration vector $\vec{a}$.
 2. **The Extended Halo Lags Behind:** The surrounding vacuum distortion extends outward to macroscopic radii ($r \gg \lambda_C$). Because changes in the space-quantum packing field $\eta$ propagate through the medium at a finite phase velocity ($v_{\text{relaxation}} = c_{\text{eff}}$), the extended outer regions of the well cannot update instantaneously.
 3. **The Lagging Center of the Well:** During ongoing acceleration, the effective center of the outer refractive well sits at a retarded position:
-   $$\vec{x}_{\text{well}}(t) \approx \vec{x}_{\text{core}}(t) - \Delta \vec{x}_{\text{lag}} \quad \text{where } \Delta \vec{x}_{\text{lag}} \propto \vec{a}$$
+
+   $$
+   \vec{x}_{\text{well}}(t) \approx \vec{x}_{\text{core}}(t) - \Delta \vec{x}_{\text{lag}} \quad \text{where } \Delta \vec{x}_{\text{lag}} \propto \vec{a}
+   $$
 
 #### C. Wavepacket Asymmetry and the Emergent Self-Force
 Because the core wavepacket has moved ahead of its own gravitational depression, the particle no longer sits at the bottom of a flat potential well:
@@ -331,10 +347,16 @@ Because the core wavepacket has moved ahead of its own gravitational depression,
 This spatial mismatch causes internal phase oscillations to propagate faster on the leading edge than on the trailing edge. The wavepacket deforms into an **asymmetric envelope**: internal wavefronts tilt backward toward the lagging, denser vacuum.
 
 Applying the refractive acceleration formula $\vec{a} = -c_{\text{eff}}\nabla c_{\text{eff}}$ across the particle's own deformed envelope reveals a backward-pointing self-acceleration:
-$$\vec{a}_{\text{self}} = -c_{\text{eff}} \nabla c_{\text{eff, self}} \propto -\vec{a}$$
+
+$$
+\vec{a}_{\text{self}} = -c_{\text{eff}} \nabla c_{\text{eff, self}} \propto -\vec{a}
+$$
 
 The particle experiences an inward refractive pull toward its own lagging vacuum well. To maintain the acceleration $\vec{a}$, an external agent must continuously apply a force to overcome this self-induced refractive gradient:
-$$\vec{F}_{\text{ext}} = -\vec{F}_{\text{self}} = m_i \vec{a}$$
+
+$$
+\vec{F}_{\text{ext}} = -\vec{F}_{\text{self}} = m_i \vec{a}
+$$
 
 **Inertia is the self-induced refractive drag of a particle accelerating out of its own vacuum well.**
 
