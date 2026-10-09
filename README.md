@@ -253,7 +253,10 @@ When a mass like the Moon moves, its refractive well possesses **effective inert
 > The refractive depression moves with the velocity $\vec{v}$ of the source.
 
 Because the field carries the source's prior momentum, the spatial gradient $\nabla c_{\text{eff}}$ naturally focuses on the linearly extrapolated position:
-$$\vec{r}_{\text{apparent}} = \vec{r}_{\text{retarded}} + \vec{v} \Delta t$$
+
+$$
+\vec{r}_{\text{apparent}} = \vec{r}_{\text{retarded}} + \vec{v} \Delta t
+$$
 
 #### 2. The Intervening Vacuum Continues to Relax
 While the momentum of the source carries the bulk depression forward, the vacuum between Earth and Moon continues to relax at the local wave speed:
