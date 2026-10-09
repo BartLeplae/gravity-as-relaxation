@@ -209,9 +209,9 @@ The simulation script `03_solar_weak_field/simulate_earth_gravity.py` directly c
 * **At Earth's Surface ($|x| = 1\,R_\oplus$):**  
   The cumulative enclosed mass reaches its limit, making the spatial slope $\nabla c_{\text{eff}}$ steepest. This maximum derivative produces the standard surface gravity:
 
-  $$
-  \vec{a}_{\text{surface}} = -c_{\text{eff}} \nabla c_{\text{eff}} = -\frac{GM_\oplus}{R_\oplus^2} \hat{r} = -\mathbf{9.82\text{ m/s}^2} \hat{r}
-  $$
+$$
+\vec{a}_{\text{surface}} = -c_{\text{eff}} \nabla c_{\text{eff}} = -\frac{GM_\oplus}{R_\oplus^2} \hat{r} = -\mathbf{9.82\text{ m/s}^2} \hat{r}
+$$
 
 ---
 
@@ -275,7 +275,10 @@ In classical general relativity, point particles introduce non-physical infiniti
 $$E = mc^2 = \hbar \omega_{\text{Compton}}$$
 
 Its physical extent is bounded by its reduced Compton wavelength (effective packet radius $\lambda_C = \frac{\hbar}{mc}$). Within this localized region, the particle's self-energy acts as a distributed volumetric source $S(\vec{x})$ that compresses surrounding space-quanta:
-$$\nabla \cdot \left( \sigma(\eta) \nabla \eta \right) = -S(\vec{x})$$
+
+$$
+\nabla \cdot \left( \sigma(\eta) \nabla \eta \right) = -S(\vec{x})
+$$
 
 where $S(\vec{x}) \propto |\psi(\vec{x})|^2$ is the particle's quantum probability density.
 
@@ -321,9 +324,9 @@ When a particle moves at constant velocity ($\vec{v} = \text{const}$), the forwa
 * The localized standing wave $\psi(\vec{x}, t)$ rests symmetrically at the exact minimum of its own refractive well.
 * Evaluating the spatial gradient at the center of the wavepacket:
   
-  $$
-  \nabla c_{\text{eff}}(\vec{x}_{\text{core}}) = 0 \implies \vec{a}_{\text{self}} = -c_{\text{eff}}\nabla c_{\text{eff}} = 0
-  $$
+$$  
+\nabla c_{\text{eff}}(\vec{x}_{\text{core}}) = 0 \implies \vec{a}_{\text{self}} = -c_{\text{eff}}\nabla c_{\text{eff}} = 0
+$$
 
 Because the refractive environment is identical in all directions around the moving center of mass, the particle experiences zero net self-force and continues coasting indefinitely at constant velocity (Newton’s First Law).
 
@@ -334,9 +337,9 @@ When an external force $\vec{F}_{\text{ext}}$ accelerates the particle ($\vec{a}
 2. **The Extended Halo Lags Behind:** The surrounding vacuum distortion extends outward to macroscopic radii ($r \gg \lambda_C$). Because changes in the space-quantum packing field $\eta$ propagate through the medium at a finite phase velocity ($v_{\text{relaxation}} = c_{\text{eff}}$), the extended outer regions of the well cannot update instantaneously.
 3. **The Lagging Center of the Well:** During ongoing acceleration, the effective center of the outer refractive well sits at a retarded position:
 
-   $$
-   \vec{x}_{\text{well}}(t) \approx \vec{x}_{\text{core}}(t) - \Delta \vec{x}_{\text{lag}} \quad \text{where } \Delta \vec{x}_{\text{lag}} \propto \vec{a}
-   $$
+$$
+\vec{x}_{\text{well}}(t) \approx \vec{x}_{\text{core}}(t) - \Delta \vec{x}_{\text{lag}} \quad \text{where } \Delta \vec{x}_{\text{lag}} \propto \vec{a}
+$$
 
 #### C. Wavepacket Asymmetry and the Emergent Self-Force
 Because the core wavepacket has moved ahead of its own gravitational depression, the particle no longer sits at the bottom of a flat potential well:
@@ -369,7 +372,10 @@ This mechanism resolves why inertial mass ($m_i$) and gravitational mass ($m_g$)
   $$m_i = \left| \frac{\partial \vec{F}_{\text{self}}}{\partial \vec{a}} \right| \propto \iiint \nabla(\Delta\eta) \, d^3x$$
 
 Because both phenomena are direct mathematical projections of the exact same physical distortion field $\eta(\vec{x})$, their ratio is identically constant:
-$$\frac{m_i}{m_g} \equiv 1.0$$
+
+$$
+\frac{m_i}{m_g} \equiv 1.0
+$$
 
 ---
 
@@ -405,7 +411,9 @@ Unlike a stable particle that maintains a persistent energy eigenstate ($E_0 = m
 #### B. The Gauss Conservation Law: Zero Gravitational Monopole
 Integrating the space-quantum packing excess $\Delta\eta(\vec{x}) = \eta(\vec{x}) - 1$ over any volume containing the complete fluctuation reveals strict conservation:
 
-$$\iiint_{\text{fluctuation}} \Delta\eta(\vec{x}) \, d^3x = \iiint_{\text{core}} \Delta\eta \, d^3x + \iiint_{\text{rim}} \Delta\eta \, d^3x \equiv 0$$
+$$
+\iiint_{\text{fluctuation}} \Delta\eta(\vec{x}) \, d^3x = \iiint_{\text{core}} \Delta\eta \, d^3x + \iiint_{\text{rim}} \Delta\eta \, d^3x \equiv 0
+$$
 
 Applying Gauss’s divergence theorem to the Poisson relaxation field $\nabla \cdot (\sigma(\eta) \nabla\eta) = -S(\vec{x})$:
 
@@ -417,10 +425,16 @@ $$\oint_{\partial V} \sigma(\eta)\nabla\eta \cdot d\vec{A} = -\iiint_V S(\vec{x}
 
 #### C. Why an Outside Observer Measures Zero Gravity
 In this model, gravitational acceleration is governed by the coordinate speed-of-light gradient:
-$$\vec{a} = -c_{\text{eff}} \nabla c_{\text{eff}} \approx +c_0^2 \nabla\eta$$
+
+$$
+\vec{a} = -c_{\text{eff}} \nabla c_{\text{eff}} \approx +c_0^2 \nabla\eta
+$$
 
 For any test mass situated at macroscopic distances ($r \gg \lambda_C$):
-$$\nabla\eta(r) = 0 \implies \vec{a} = 0$$
+
+$$
+\nabla\eta(r) = 0 \implies \vec{a} = 0
+$$
 
 The surrounding field demonstrates:
 * **Zero Net Inward Refraction:** The light-speed depression at the center is optically shielded by the surrounding light-speed elevation of the rim.
